@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News | HOOPSTARS PH</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #111;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 65px;
+            height: 65px;
+            object-fit: contain;
+        }
+
+        .brand h1 {
+            font-size: 25px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #aaa;
+        }
+
+        .hero {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: #ccc;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .news-section {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 0 18px;
+        }
+
+        .section-title {
+            font-size: 27px;
+            margin-bottom: 25px;
+            border-left: 5px solid #000;
+            padding-left: 12px;
+        }
+
+        /* Vertical news box layout */
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .news-card {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .news-content {
+            padding: 22px;
+        }
+
+        .news-category {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 6px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .news-content h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .news-date {
+            color: #777;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .news-content p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+
+        .read-more {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+
+        .read-more:hover {
+            background-color: #444;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .brand {
+                flex-direction: column;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero h2 {
+                font-size: 26px;
+            }
+
+            .news-card img {
+                height: 200px;
+            }
+
+            .news-content h3 {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <img src="hoopstar.jpg" alt="HOOPSTARS PH Logo" class="logo">
+            <h1>HOOPSTARS PH</h1>
+        </div>
+
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="players.html">TOP PLAYERS</a>
+            <a href="latestnews.html">LATEST NEWS</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>LATEST BASKETBALL NEWS</h2>
+        <p>Your source for the latest stories in Philippine basketball.</p>
+        <p>Covering UAAP, NCAA, youth basketball, and more.</p>
+    </section>
+
+    <main class="news-section">
+        <h2 class="section-title">LATEST STORIES</h2>
+
+        <div class="news-grid">
+
+            <article class="news-card">
+                <img src="nbtc.jpg" alt="National Basketball Training Center event">
+
+                <div class="news-content">
+                    <span class="news-category">YOUTH BASKETBALL</span>
+                    <h3>NBTC Manila Live Highlights Young Filipino Basketball Talent</h3>
+                    <p class="news-date">March 2026</p>
+                    <p>
+                        Fil-Am USA Select caputes gold at the recently conclued NBTC Manila Live in Mall of Asia Arena. 16 year-old Filipino-American Blaze Johnson awarded Most Outsanding Player honors.
+                    </p>
+                    <a class="read-more"
+                       href="https://www.gmanetwork.com/news/sports/basketball/981834/fil-am-nation-select-usa-completes-three-peat-locks-down-ust-in-ot/story/?fbclid=IwZXh0bgNhZW0CMTEAcGRvZgVzcnRjBmFwcF9pZAwzNTA2ODU1MzE3MjgAAR5CAKHdd0dbwS9CoiTZSx70NGg6zhxrz1yWh7xiGX135TedvY0JyLsB7cBJVw_aem_NRdX4HJrYMGRT_eXU3DldQ"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        READ MORE
+                    </a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="palaro.jpg" alt="Palarong Pambansa basketball action">
+
+                <div class="news-content">
+                    <span class="news-category">PALARONG PAMBANSA</span>
+                    <h3>CALABARZON Claims Victory in Secondary Boys' Basketball Final</h3>
+                    <p class="news-date">May 30, 2026</p>
+                    <p>
+                        CALABARZON defeated Davao Region, 79–62, in the secondary
+                        boys' basketball final at the 2026 Palarong Pambansa.
+                        The championship game highlighted the talent of student-athletes
+                        from different parts of the country.
+                    </p>
+                    <a class="read-more"
+                       href="https://www.youtube.com/watch?v=8r6fvDaZL80"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        WATCH HIGHLIGHTS
+                    </a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="gilas.jpg" alt="Philippine youth basketball team">
+
+                <div class="news-content">
+                    <span class="news-category">GILAS YOUTH</span>
+                    <h3>Gilas Youth Defeats Thailand to Win U18 SEABA Qualifiers</h3>
+                    <p class="news-date">June 14, 2026</p>
+                    <p>
+                        The Philippine youth team defeated Thailand, 85–70, to win
+                        the FIBA U18 Asia Cup SEABA Qualifiers. Joaquin Tovera was
+                        named Most Valuable Player as the Philippines secured
+                        qualification for the FIBA U18 Asia Cup.
+                    </p>
+                    <a class="read-more"
+                       href="https://www.fiba.basketball/en/events/fiba-u18-asia-cup-2026/news/philippines-thailand-qualify-from-seaba-for-fiba-u18-asia-cup-2026"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        READ MORE
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HOOPSTARS PH. All Rights Reserved.</p>
+        <p>Celebrating the next generation of Philippine basketball.</p>
+    </footer>
+
+</body>
+</html>
+
