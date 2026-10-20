@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Top Players | HOOPSTARS PH</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #080808;
+            color: white;
+        }
+
+        header {
+            background-color: #080808;
+            padding: 20px;
+            border-bottom: 1px solid #444444;
+        }
+
+        .logo {
+            width: 70px;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        nav a:hover {
+            color: #AAAAAA;
+        }
+
+        .page-intro {
+            padding: 35px 20px;
+        }
+
+        .page-intro h1 {
+            font-size: 30px;
+            line-height: 1.2;
+        }
+
+        .page-intro p {
+            color: #CCCCCC;
+            line-height: 1.6;
+        }
+
+        .players {
+            background-color: #171717;
+            padding: 20px;
+        }
+
+        .player-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 15px;
+        }
+
+        .player-card {
+            border: 1px solid #444444;
+            padding: 10px;
+            min-width: 0;
+        }
+
+        .player-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .player-card h2 {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .player-card p {
+            color: #CCCCCC;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .stats {
+            border-top: 1px solid #444444;
+            border-bottom: 1px solid #444444;
+            padding: 8px 0;
+        }
+
+        .stats p {
+            color: white;
+            margin: 5px 0;
+        }
+
+        .report {
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            color: #AAAAAA;
+            font-size: 12px;
+        }
+
+        @media (max-width: 400px) {
+            .player-grid {
+                gap: 8px;
+            }
+
+            .player-card {
+                padding: 7px;
+            }
+
+            .player-card img {
+                height: 110px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="hoopstar.jpg"
+             alt="HOOPSTARS PH logo"
+             class="logo">
+
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="players.html">TOP PLAYERS</a>
+            <a href="latestnews.html">LATEST NEWS</a>
+        </nav>
+    </header>
+
+    <section class="page-intro">
+        <p>01 / PLAYER SCOUTING</p>
+
+        <h1>HOOPSTAR PH MYTHICAL TEAM (2025 Season)</h1>
+
+        <p>
+            Discover rising basketball talent from
+            Metro Manila through player profiles,
+            statistics, and scouting reports.
+        </p>
+    </section>
+
+    <section class="players">
+
+        <div class="player-grid">
+
+            <div class="player-card">
+                <img src="chog.jpg" alt="Player 1">
+
+                <h2>KENJI YOB MORAL</h2>
+
+                <p>School: Saint Augustine Institute of Pampanga</p>
+                <p>Position: Point Guard</p>
+
+                <div class="stats">
+                    <p>PPG: 18.9</p>
+                    <p>RPG: 5.3</p>
+                    <p>APG: 8.2</p>
+                </div>
+
+                <p class="report">
+                    Scouting Report: Best known for his playmaking and basketball IQ. Had a standout performance in the FIBA U18 Asia Cup, leading the tournament in steals and assists.
+             
+                </p>
+            </div>
+
+            <div class="player-card">
+                <img src="alas.jpg" alt="Player 2">
+
+                <h2>KIEFFER LOUIE ALAS</h2>
+
+                <p>School: Utah Prep</p>
+                <p>Position: Shooting Guard</p>
+
+                <div class="stats">
+                    <p>PPG: 26</p>
+                    <p>RPG: 7.5</p>
+                    <p>APG: 4.8</p>
+                </div>
+
+                <p class="report">
+                    Scouting Report: Confident player who has a solid perimeter game. Awarded as the UAAP Season 87 Juniors Basketball MVP with De La Salle Zobel.
+                    
+                  
+                </p>
+            </div>
+
+            <div class="player-card">
+                <img src="andrei.jpg" alt="Player 3">
+
+                <h2>ANDREI UGADDAN</h2>
+
+                <p>School: San Beda University-Alabang</p>
+                <p>Position: Small Forward</p>
+
+                <div class="stats">
+                    <p>PPG: 16.3</p>
+                    <p>RPG: 11.4</p>
+                    <p>APG: 3.2</p>
+                </div>
+
+                <p class="report">
+                    Scouting Report: Tall frame and insane athleticsm, also has a solid jumper and can guard any position on the floor with his size. Mythical 5 awardee in the 2025 Palarong Pambansa Men's Basketball.
+                </p>
+            </div>
+
+            <div class="player-card">
+                <img src="rene.jpg" alt="Player 4">
+
+                <h2>RENE BATERBONIA+</h2>
+
+                <p>School: Ateneo de Davao University</p>
+                <p>Position: Power Forward</p>
+
+                <div class="stats">
+                    <p>PPG: 14.4</p>
+                    <p>RPG: 12.7</p>
+                    <p>APG: 4.6</p>
+                </div>
+
+                <p class="report">
+                    Scouting Report: Outsanding defensive presence in the backcourt, some scouts say he's undersized for a big but his hustle and grit says otherwise. Awarded Best Defensive Player in 2026 NBTC Manila Live.
+                </p>
+            </div>
+
+            <div class="player-card">
+                <img src="cariño.jpg" alt="Player 5">
+
+                <h2>PRINCE CARIÑO</h2>
+
+                <p>School: Far Eastern University-Diliman</p>
+                <p>Position: Center</p>
+
+                <div class="stats">
+                    <p>PPG: 15.7</p>
+                    <p>RPG: 13.4</p>
+                    <p>APG: 3.8</p>
+                </div>
+
+                <p class="report">
+                    Scouting Report: Fundamental big, impressive rebounding and basketball IQ. Shared the court with Kenji Moral in the 2026 U18 FIBA Asia Cup and recently acquired a US NCAA Division 1 offer with Nevada State University.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 HOOPSTARS PH. All Rights Reserved.</p>
+        <p>Celebrating the next generation of Philippine basketball.</p>
+
+</body>
+</html>
